@@ -1,0 +1,16 @@
+{
+  "name": "framework",
+  "version": "1.0.0",
+  "description": "1. 安装node，使用`node -v`和`npm -v`检查是否安装成功并查看版本",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "bower": "^1.8.4",
+    "gulp": "^3.9.1",
+    "gulp-pug": "^3.3.0"
+  }
+}

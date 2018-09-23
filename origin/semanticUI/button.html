@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>按钮</title>
+    <link rel="stylesheet" type="text/css" href="../../semantic/dist/semantic.min.css">
+    <script src="../../semantic/dist/semantic.min.js"></script>
+</head>
+<body>
+<h4>按钮的尺寸将根据可见内容的尺寸自动调整。请确保有足够的空间来显示隐藏内容</h4>
+<button class="ui button">关注</button>
+<div class="ui button" tabindex="0">Focusable</div>
+<button class="ui primary button">Save</button>
+<div class="ui animated button" tabindex="0">
+    <div class="visible content">Next</div>
+    <div class="hidden content">
+        <i class="right arrow icon"></i>
+    </div>
+</div>
+<div class="ui vertical animated button" tabindex="0">
+    <div class="hidden content">Shop</div>
+    <div class="visible content">
+        <i class="shop icon"></i>
+    </div>
+</div>
+<div class="ui animated fade button" tabindex="0">
+    <div class="visible content">Sign-up for a Pro account</div>
+    <div class="hidden content">每月12.99美元</div>
+</div>
+<div class="ui labeled button" tabindex="0">
+    <div class="ui button"><i class="heart icon"></i> Like</div>
+    <a class="ui basic label">
+        2,048
+    </a>
+</div>
+<div class="ui left labeled button" tabindex="0">
+    <a class="ui basic red right pointing label">
+        2,048
+    </a>
+    <div class="ui red button"><i class="heart icon"></i> Like</div>
+</div>
+<h4>按钮最多只能有一个图标</h4>
+<button class="ui icon button">
+    <i class="cloud icon"></i>
+</button>
+<button class="ui labeled icon button"><i class="pause icon"></i> Pause</button>
+<button class="ui right labeled icon button"><i class="right arrow icon"></i> Next</button>
+<h4>不同颜色的按钮</h4>
+<button class="ui primary basic button">Primary</button>
+<button class="ui secondary basic button">Secondary</button>
+<button class="ui positive basic button">Positive</button>
+<button class="ui negative basic button">Negative</button>
+<button class="ui red basic button">Red</button>
+<button class="ui orange basic button">Orange</button>
+<button class="ui yellow basic button">黄色</button>
+<button class="ui olive basic button">Olive</button>
+<button class="ui green basic button">Green</button>
+<button class="ui teal basic button">Teal</button>
+<button class="ui blue basic button">Blue</button>
+<button class="ui violet basic button">紫罗兰色</button>
+<button class="ui purple button">紫色</button>
+<button class="ui pink button">粉色</button>
+<button class="ui brown button">褐色</button>
+<button class="ui grey button">灰色</button>
+<button class="ui black button">Black</button>
+<h4>按钮可以被设置为暗色背景（幽灵按钮）</h4>
+<div class="ui inverted segment">
+    <button class="ui inverted button">Standard</button>
+    <button class="ui inverted red button">Red</button>
+    <button class="ui inverted orange button">Orange</button>
+    <button class="ui inverted yellow button">黄色</button>
+    <button class="ui inverted grey button">灰色</button>
+    <button class="ui inverted black button">Black</button>
+</div>
+<div class="ui inverted segment">
+    <button class="ui inverted basic button">基本的</button>
+    <button class="ui inverted red basic button">Basic Red</button>
+    <button class="ui inverted orange basic button">Basic Orange</button>
+    <button class="ui inverted yellow basic button">Basic Yellow</button>
+    <button class="ui inverted olive basic button">Basic Olive</button>
+</div>
+<h4>多个按钮可以组织成一个组</h4>
+<div class="ui vertical buttons">
+    <button class="ui button">One</button>
+    <button class="ui button">Two</button>
+    <button class="ui button">Three</button>
+</div>
+<h4>在分组的设置中指明包含几个成员，则这几个成员平分所能占据的宽度：</h4>
+<div class="ui four icon buttons">
+    <button class="ui button"><i class="align left icon"></i></button>
+    <button class="ui button"><i class="align center icon"></i></button>
+    <button class="ui button"><i class="align right icon"></i></button>
+    <button class="ui button"><i class="align justify icon"></i></button>
+</div>
+<div class="ui buttons">
+    <button class="ui button active">Cancel</button>
+    <div class="or"></div>
+    <button class="ui positive button">Save</button>
+</div>
+<h4>如果是中文，需要配合Semantic UI的data-text属性为中间的or添加本地文本：</h4>
+<div class="ui buttons">
+    <button class="ui button">un</button>
+    <div class="or" data-text="或"></div>
+    <button class="ui positive button">deux</button>
+</div>
+<h4>表示状态的按钮</h4>
+<button class="ui disabled button"><i class="user icon"></i> Followed</button>
+<button class="ui primary loading button">加载</button>
+<h4>按钮可以被格式化为社交网站链接</h4>
+<button class="ui facebook button"><i class="facebook icon"></i> Facebook</button>
+<button class="ui twitter button"><i class="twitter icon"></i> Twitter</button>
+<button class="ui google plus button"><i class="google plus icon"></i> Google Plus</button>
+<button class="ui vk button"><i class="vk icon"></i> VK</button>
+<button class="ui linkedin button"><i class="linkedin icon"></i> LinkedIn</button>
+<button class="ui instagram button"><i class="instagram icon"></i> Instagram</button>
+<button class="ui youtube button"><i class="youtube icon"></i> YouTube</button>
+<h4>按钮可以有不同尺寸</h4>
+<button class="mini ui button">Mini</button>
+<button class="tiny ui button">Tiny</button>
+<button class="small ui button">Small</button>
+<button class="medium ui button">Medium</button>
+<button class="large ui button">Large</button>
+<button class="big ui button">Big</button>
+<button class="huge ui button">巨大</button>
+<button class="massive ui button">Massive</button>
+<div class="ui clearing segment">
+    <button class="ui right floated button">Right Floated</button>
+    <button class="ui left floated button">Left Floated</button>
+</div>
+<h4>按钮可以缩减自身内边距以适应紧凑的空间</h4>
+<button class="compact ui button">控制</button>
+<button class="ui compact icon button">
+    <i class="pause icon"></i>
+</button>
+<button class="ui compact labeled icon button"><i class="pause icon"></i> Pause</button>
+<h4>按钮可以格式化为开关</h4>
+<button class="ui toggle button">投票</button>
+
+<button class="fluid ui button">适应容器</button>
+<button class="circular ui icon button">
+    <i class="icon settings"></i>
+</button>
+<div class="ui top attached button" tabindex="0">Top</div>
+<div class="ui attached segment">
+    <p></p>
+</div>
+<div class="ui bottom attached button" tabindex="0">Bottom</div>
+<button class="ui left attached button">Left</button>
+<button class="right attached ui button">Right</button>
+
+
+</body>
+</html>

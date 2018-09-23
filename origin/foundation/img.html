@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Foundation 图片</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/foundation/5.5.3/css/foundation.min.css">
+    <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/foundation/5.5.3/js/foundation.min.js"></script>
+    <!--Some Foundation 的组件使用了比较前前沿的 HTML5 和 CSS3 特性，但不是所有浏览器都支持。
+    Modernizr 是一个用于检测用户浏览器HTML5和CSS3特性的JavaScript库 - 让组件能在所有浏览器上正常运行。-->
+    <script src="https://cdn.bootcss.com/foundation/5.5.3/js/vendor/modernizr.js"></script>
+    <style>
+        body {
+            margin: 20px auto;
+        }
+    </style>
+</head>
+<body>
+<p>在 <code>&lt;a&gt;</code> 标签中添加 <code>.th</code> 类将图片设置为缩略图。 鼠标移动到上面会显示一个浅蓝色外框:</p>
+<p><strong>注意:</strong> Foundation 中图片默认是响应式的。重置窗口大小可以查看效果。</p>
+<a href="http://www.runoob.com/try/demo_source/paris.jpg"
+   target="_blank" class="th radius">
+    <img src="http://www.runoob.com/try/demo_source/paris.jpg"
+         alt="Paris" width="400" height="300">
+</a>
+<ul class="clearing-thumbs" data-clearing>
+    <li><a href="http://www.runoob.com/try/demo_source/rock600x400.jpg" class="th">
+        <img data-caption="The Pulpit Rock" src="http://www.runoob.com/try/demo_source/rock200x100.jpg"></a>
+    </li>
+    <li><a href="http://www.runoob.com/try/demo_source/skies600x400.jpg" class="th">
+        <img data-caption="Sunrise Skies" src="http://www.runoob.com/try/demo_source/skies200x100.jpg"></a>
+    </li>
+    <li><a href="http://www.runoob.com/try/demo_source/lights600x400.jpg" class="th">
+        <img data-caption="Northern Lights" src="http://www.runoob.com/try/demo_source/lights200x100.jpg">
+    </a></li>
+</ul>
+
+<ul class="clearing-thumbs clearing-feature" data-clearing>
+    <li><a href="http://www.runoob.com/try/demo_source/rock600x400.jpg" class="th">
+        <img data-caption="The Pulpit Rock" src="http://www.runoob.com/try/demo_source/rock200x100.jpg"></a>
+    </li>
+    <li><a href="http://www.runoob.com/try/demo_source/skies600x400.jpg" class="th">
+        <img data-caption="Sunrise Skies" src="http://www.runoob.com/try/demo_source/skies200x100.jpg"></a>
+    </li>
+    <li class="clearing-featured-img"><a href="http://www.runoob.com/try/demo_source/lights600x400.jpg" class="th">
+        <img data-caption="Northern Lights" src="http://www.runoob.com/try/demo_source/lights200x100.jpg">
+    </a></li>
+</ul>
+
+<p>通过添加多个块类，在不同屏幕指定不同是均分数量:</p>
+<ul class="small-block-grid-2 medium-block-grid-3 large-block-grid-4">
+    <li><img src="http://www.runoob.com/try/demo_source/newyork.jpg" alt="New York" width="400" height="300"></li>
+    <li><img src="http://www.runoob.com/try/demo_source/paris.jpg" alt="Paris" width="400" height="300"></li>
+    <li><img src="http://www.runoob.com/try/demo_source/sanfran.jpg" alt="San Francisco" width="400" height="300"></li>
+    <li><img src="http://www.runoob.com/try/demo_source/newyork.jpg" alt="New York" width="400" height="300"></li>
+</ul>
+
+<!-- Initialize Foundation JS -->
+<script>
+    $(document).ready(function () {
+        $(document).foundation();
+    })
+</script>
+</body>
+</html>

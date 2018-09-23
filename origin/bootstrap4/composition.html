@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bootstrap4 排版</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/popper.js/1.12.5/umd/popper.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            margin: 20px auto;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <p>Bootstrap4 是 Bootstrap 的最新版本，与 Bootstrap3 相比拥有了更多的具体的类以及把一些有关的部分变成了相关的组件。
+        <mark>同时 Bootstrap.min.css 的体积减少了40%以上。</mark></p>
+    <p>Bootstrap4 放弃了对 IE8 以及 iOS 6 的支持，现在仅仅支持 IE9 以上 以及 iOS 7 以上版本的浏览器。
+        如果对于其中需要用到以前的浏览器，那么请使用 Bootstrap3。</p>
+    <h4 class="display-1">图片样式<span class="badge badge-secondary">New</span></h4>
+    <img src="http://static.runoob.com/images/mix/cinqueterre.jpg" class="rounded float-left" alt="Cinque Terre" width="304" height="236">
+    <img src="http://static.runoob.com/images/mix/cinqueterre.jpg" class="rounded-circle img-fluid" alt="Cinque Terre">
+    <img src="http://static.runoob.com/images/mix/cinqueterre.jpg" class="img-thumbnail float-right" alt="Cinque Terre">
+    <h4 class="display-2">按钮<span class="badge badge-primary">主要</span></h4>
+    <button type="button" class="btn btn-outline-primary">主要按钮</button>
+    <button type="button" class="btn btn-outline-secondary">次要按钮</button>
+    <button type="button" class="btn btn-outline-success">成功</button>
+    <button type="button" class="btn btn-outline-info">信息</button>
+    <button type="button" class="btn btn-outline-warning">警告</button>
+    <button type="button" class="btn btn-outline-danger">危险</button>
+    <button type="button" class="btn btn-outline-dark">黑色</button>
+    <button type="button" class="btn btn-outline-light text-dark">浅色</button>
+    <h4 class="display-3">进度条<span class="badge badge-pill badge-default">默认</span></h4>
+    <div class="progress">
+        <div class="progress-bar progress-bar-striped" style="width:40%"></div>
+        <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 40%"></div>
+    </div>
+    <h4 class="display-4">分页</h4>
+    <ul class="pagination">
+        <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item active"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+    </ul>
+    <ul class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">Photos</a></li>
+        <li class="breadcrumb-item"><a href="#">Summer 2017</a></li>
+        <li class="breadcrumb-item"><a href="#">Italy</a></li>
+        <li class="breadcrumb-item active">Rome</li>
+    </ul>
+    <div class="card bg-success text-white" style="width:400px">
+        <div class="card-header">头部</div>
+        <div class="card-body">
+            <h4 class="card-title">Card title</h4>
+            <p class="card-text">Some example text. Some example text.</p>
+            <a href="#" class="card-link">Card link</a>
+            <a href="#" class="card-link">Another link</a>
+        </div>
+        <div class="card-footer">底部</div>
+        <img class="card-img-bottom" src="http://static.runoob.com/images/mix/img_avatar.png" alt="Card image" style="width:100%">
+    </div>
+    <div class="card img-fluid" style="width:500px">
+        <img class="card-img-top" src="http://static.runoob.com/images/mix/img_avatar.png" alt="Card image" style="width:100%">
+        <div class="card-img-overlay">
+            <h4 class="card-title">John Doe</h4>
+            <p class="card-text">Some example text some example text. Some example text some example text. Some example text some example text. Some example text some example text.</p>
+            <a href="#" class="btn btn-primary">See Profile</a>
+        </div>
+    </div>
+    <p>以下实例包含了三个选项。最后一个是禁用的，使用 .form-check-inline 类可以让选项显示在同一行上：</p>
+    <form>
+        <div class="form-check form-check-inline">
+            <label class="form-check-label">
+                <input type="checkbox" class="form-check-input" value="">Option 1
+            </label>
+        </div>
+        <div class="form-check form-check-inline">
+            <label class="form-check-label">
+                <input type="checkbox" class="form-check-input" value="">Option 2
+            </label>
+        </div>
+        <div class="form-check form-check-inline disabled">
+            <label class="form-check-label">
+                <input type="checkbox" class="form-check-input" value="" disabled>Option 3
+            </label>
+        </div>
+        <br>
+        <label class="radio-inline"><input type="radio" name="optradio">Option 1</label>
+        <label class="radio-inline"><input type="radio" name="optradio">Option 2</label>
+        <label class="radio-inline"><input type="radio" name="optradio">Option 3</label>
+    </form>
+</div>
+</body>
+</html>

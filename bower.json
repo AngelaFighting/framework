@@ -1,0 +1,21 @@
+{
+  "name": "framework",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Angela <xuyi.liao@hand-china.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^4.0.0",
+    "foundation": "^5.5.3"
+  }
+}

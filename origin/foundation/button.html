@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Foundation 按钮</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/foundation/5.5.3/css/foundation.min.css">
+    <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/foundation/5.5.3/js/foundation.min.js"></script>
+    <!--Some Foundation 的组件使用了比较前前沿的 HTML5 和 CSS3 特性，但不是所有浏览器都支持。
+    Modernizr 是一个用于检测用户浏览器HTML5和CSS3特性的JavaScript库 - 让组件能在所有浏览器上正常运行。-->
+    <script src="https://cdn.bootcss.com/foundation/5.5.3/js/vendor/modernizr.js"></script>
+</head>
+<body>
+<ul class="accordion" data-accordion>
+    <li class="accordion-navigation">
+        <a href="#demo">按钮</a>
+        <div id="demo" class="content active">
+            <button type="button" class="button large">Default</button>
+            <button type="button" class="button secondary expand">Secondary</button>
+            <button type="button" class="button success small">Success</button>
+            <button type="button" class="button info tiny">Info</button>
+            <button type="button" class="button warning radius">Warning</button>
+            <button type="button" class="button alert round disabled">Alert</button>
+        </div>
+    </li>
+    <li class="accordion-navigation">
+        <a href="#demo2">按钮组</a>
+        <div id="demo2" class="content">
+            <ul class="button-group">
+                <li>
+                    <button type="button" class="button"><i class="fi-home"></i>Apple</button>
+                </li>
+                <li>
+                    <button type="button" class="button">Samsung</button>
+                </li>
+                <li>
+                    <button type="button" class="button">Sony</button>
+                </li>
+            </ul>
+            <ul class="button-group stack radius">
+                <li>
+                    <button type="button" class="button">Apple</button>
+                </li>
+                <li>
+                    <button type="button" class="button">Samsung</button>
+                </li>
+                <li>
+                    <button type="button" class="button">Sony</button>
+                </li>
+            </ul>
+            <br>
+            <ul class="button-group stack-for-small">
+                <li>
+                    <button type="button" class="button">Apple</button>
+                </li>
+                <li>
+                    <button type="button" class="button">Samsung</button>
+                </li>
+                <li>
+                    <button type="button" class="button">Sony</button>
+                </li>
+            </ul>
+            <br>
+            <ul class="button-group even-3">
+                <li>
+                    <button type="button" class="button">Apple</button>
+                </li>
+                <li>
+                    <button type="button" class="button">Samsung</button>
+                </li>
+                <li>
+                    <button type="button" class="button">Sony</button>
+                </li>
+            </ul>
+
+            <ul class="button-group even-5">
+                <li>
+                    <button type="button" class="button">Apple</button>
+                </li>
+                <li>
+                    <button type="button" class="button">Samsung</button>
+                </li>
+                <li>
+                    <button type="button" class="button">Sony</button>
+                </li>
+                <li>
+                    <button type="button" class="button">HTC</button>
+                </li>
+                <li>
+                    <button type="button" class="button">Huawei</button>
+                </li>
+            </ul>
+
+            <ul class="button-group even-8">
+                <li>
+                    <button type="button" class="button">A</button>
+                </li>
+                <li>
+                    <button type="button" class="button">B</button>
+                </li>
+                <li>
+                    <button type="button" class="button">C</button>
+                </li>
+                <li>
+                    <button type="button" class="button">D</button>
+                </li>
+                <li>
+                    <button type="button" class="button">E</button>
+                </li>
+                <li>
+                    <button type="button" class="button">F</button>
+                </li>
+                <li>
+                    <button type="button" class="button">G</button>
+                </li>
+                <li>
+                    <button type="button" class="button">H</button>
+                </li>
+            </ul>
+        </div>
+    </li>
+    <li class="accordion-navigation">
+        <a href="#demo3">下拉列表</a>
+        <div id="demo3" class="content">
+            <a href="#" data-dropdown="id01" class="button dropdown">Dropdown Button</a>
+            <button class="button split">Split Button
+                <span data-dropdown="id01"></span>
+            </button>
+            <!-- The actual dropdown -->
+            <ul id="id01" data-dropdown-content class="f-dropdown">
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 2</a></li>
+                <li><a href="#">Link 3</a></li>
+            </ul>
+        </div>
+    </li>
+</ul>
+
+<!-- Initialize Foundation JS -->
+<script>
+    $(document).ready(function () {
+        $(document).foundation();
+    })
+</script>
+</body>
+</html>

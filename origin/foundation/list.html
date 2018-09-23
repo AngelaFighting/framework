@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Foundation 列表</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/foundation/5.5.3/css/foundation.min.css">
+    <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/foundation/5.5.3/js/foundation.min.js"></script>
+    <!--Some Foundation 的组件使用了比较前前沿的 HTML5 和 CSS3 特性，但不是所有浏览器都支持。
+    Modernizr 是一个用于检测用户浏览器HTML5和CSS3特性的JavaScript库 - 让组件能在所有浏览器上正常运行。-->
+    <script src="https://cdn.bootcss.com/foundation/5.5.3/js/vendor/modernizr.js"></script>
+    <style>
+        body {
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+<dl>
+    <dt>Coffee</dt>
+    <dd>- black hot drink</dd>
+    <dt>Milk</dt>
+    <dd>- white cold drink</dd>
+</dl>
+<p>Foundation 网格系统有三个列</p>
+<ul>
+    <li>small (手机端)</li>
+    <li>medium (平板设备)</li>
+    <li>large (电脑设备：笔记本，台式机)</li>
+</ul>
+<ul class="circle">
+    <li>tiny: 30% 宽度</li>
+    <li>small: 40% 宽度</li>
+</ul>
+<ul class="square">
+    <li>medium: 60% 宽度</li>
+    <li>large: 70% 宽度</li>
+</ul>
+<ul class="no-bullet">
+    <li>xlarge: 95% 宽度</li>
+    <li>full: 100% 宽度和高度</li>
+</ul>
+<ul class="inline-list">
+    <li>List item</li>
+    <li>List item</li>
+</ul>
+<p>垂直选项卡可以使用 .vertical 类</p>
+<ul class="tabs" data-tab>
+    <li class="tab-title active"><a href="#home">Home</a></li>
+    <li class="tab-title"><a href="#menu1">Menu 1</a></li>
+    <li class="tab-title"><a href="#menu2">Menu 2</a></li>
+    <li class="tab-title"><a href="#menu3">Menu 3</a></li>
+</ul>
+<div class="tabs-content">
+    <div class="content active" id="home">
+        <h3>HOME</h3>
+        <p>Home is where the heart is..</p>
+    </div>
+    <div class="content" id="menu1">
+        <h3>Menu 1</h3>
+        <p>Some text, blabla</p>
+    </div>
+    <div class="content" id="menu2">
+        <h3>Menu 2</h3>
+        <p>Some other text.</p>
+    </div>
+    <div class="content" id="menu3">
+        <h3>Menu 3</h3>
+        <p>Last tab.</p>
+    </div>
+</div>
+<div class="pagination-centered">
+    <ul class="pagination">
+        <li class="arrow"><a href="#">&laquo;</a></li>
+        <li class="current"><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li class="unavailable"><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li class="arrow"><a href="#">&raquo;</a></li>
+    </ul>
+</div>
+<ul class="breadcrumbs">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Private</a></li>
+    <li class="unavailable"><a href="#">Pictures</a></li>
+    <li class="current">Vacation</li>
+</ul>
+<dl class="sub-nav">
+    <dt>Filter:</dt>
+    <dd class="active"><a href="#">All</a></dd>
+    <dd><a href="#">Active</a></dd>
+    <dd><a href="#">Pending</a></dd>
+    <dd><a href="#">Suspended</a></dd>
+</dl>
+<p>要固定导航栏只需要将导航栏放在 &lt;div class="fixed"&gt; 内即可</p>
+<p>将导航栏放在 &lt;div class="sticky"&gt; 内来设置导航栏的绝对定位，当滚动条滚到到该区域时，该导航栏就像固定导航栏一样在顶部不动</p>
+<div class="sticky">
+    <!-- 小屏幕和大屏幕 (没有中等屏幕)-->
+    <div class="top-bar" data-topbar data-options="sticky_on: [small, large];is_hover: false">
+        <ul class="title-area">
+            <li class="name">
+                <!-- 如果你不需要标题或图标可以删掉它 -->
+                <h1><a href="#">WebSiteName</a></h1>
+            </li>
+            <!-- 小屏幕上折叠按钮: 去掉 .menu-icon 类，可以去除图标。
+            如果需要只显示图片，可以删除 "Menu" 文本 -->
+            <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+        </ul>
+
+        <section class="top-bar-section">
+            <ul class="left">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Page 1</a></li>
+                <li class="divider"></li>
+                <li class="has-dropdown">
+                    <a href="#">Dropdown</a>
+                    <ul class="dropdown">
+                        <li><a href="#">First link in dropdown</a></li>
+                        <li><a href="#">Second link in dropdown</a></li>
+                        <li class="active"><a href="#">Active link in dropdown</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="right">
+                <li><a href="#">Sign Up</a></li>
+                <li><a href="#">Login</a></li>
+            </ul>
+        </section>
+        </nav>
+    </div>
+</div>
+<div class="row">
+    <div class="medium-4 columns" style="background-color:#f1f1f1;">
+        <ul class="side-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Learn HTML</a></li>
+            <li><a href="#">Learn JavaScript</a></li>
+            <li><a href="#">Learn CSS</a></li>
+            <li><a href="#">Learn Foundation</a></li>
+            <li><a href="#">Learn HTML</a></li>
+            <li><a href="#">Learn JavaScript</a></li>
+            <li><a href="#">Learn CSS</a></li>
+            <li><a href="#">Learn Foundation</a></li>
+        </ul>
+    </div>
+    <div class="medium-8 columns">
+        <h1>侧栏导航</h1>
+        <p>该实例将侧栏导航房子网格设计中，背景为灰色。</p>
+        <p><strong>注意：</strong> 在小屏幕尺寸上，侧栏导航是垂直的，且宽度是延展到整个屏幕（100% width）。</p>
+        <p>重置浏览器查看效果。</p>
+        <p>行为动作可以通过 javascript 或媒体查询来修改它。</p>
+    </div>
+</div>
+<div class="off-canvas-wrap" data-offcanvas>
+    <div class="inner-wrap">
+        <nav class="tab-bar">
+            <section class="left-small">
+                <a class="left-off-canvas-toggle menu-icon" href="#"><span></span></a>
+            </section>
+
+            <section class="middle tab-bar-section">
+                <h1 class="title">Off-canvas 实例</h1>
+            </section>
+        </nav>
+
+        <aside class="left-off-canvas-menu">
+            <ul class="off-canvas-list test">
+                <li><label>Heading</label></li>
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 2</a></li>
+                <li><a href="#">Link 3</a></li>
+                <li><a href="#">Link 4</a></li>
+                <li><a href="#">Link 5</a></li>
+                <li><a href="#">Link 6</a></li>
+                <li><a href="#">Link 7</a></li>
+                <li><a href="#">Link 8</a></li>
+            </ul>
+        </aside>
+
+        <section class="main-section">
+            <h3>菜鸟教程</h3>
+            <p>学的不仅是技术，更是梦想！！！</p>
+        </section>
+
+        <a class="exit-off-canvas"></a>
+
+    </div>
+</div>
+<h4 class="subheader">麦哲伦导航就是一个导航索引，位置是固定的，会根据用户滚动当前展示的内容自动切换导航栏上的导航项:</h4>
+<hr>
+
+<div data-magellan-expedition="fixed">
+    <dl class="sub-nav">
+        <dd data-magellan-arrival="page1"><a href="#page1">Page 1</a></dd>
+        <dd data-magellan-arrival="page2"><a href="#page2">Page 2</a></dd>
+    </dl>
+    <nav class="top-bar" data-topbar>
+        <ul class="title-area">
+            <li class="name">
+                <h1><a href="#">WebSiteName</a></h1>
+            </li>
+            <!-- Collapsible Button on small screens: remove the .menu-icon class to get rid of icon.
+            Remove the "Menu" text if you only want to show the icon -->
+            <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+        </ul>
+
+        <section class="top-bar-section">
+            <ul class="left">
+                <li data-magellan-arrival="page1"><a href="#page1">Page 1</a></li>
+                <li data-magellan-arrival="page2"><a href="#page2">Page 2</a></li>
+            </ul>
+        </section>
+    </nav>
+</div>
+<hr>
+
+<div style="height:200px;background-color:#1abc9c;color:white;">
+    <h3 data-magellan-destination="page1">页面 1</h3>
+    <a name="page1"></a>
+    <p>滚动屏幕，查看导航栏上的变化。</p>
+</div>
+
+<h3 data-magellan-destination="page2">页面 2</h3>
+<a name="page2"></a>
+<p>滚动屏幕，查看导航栏上的变化。并尝试向上滚动。</p>
+<!-- Initialize Foundation JS -->
+<!-- Elements that control the tour stops -->
+<h3 id="first">First stop!</h3>
+<h3 id="second">Second stop!</h3>
+
+<!-- The joyride: must be placed at the bottom of your page, but inside <body> -->
+<ol class="joyride-list" data-joyride>
+    <li data-id="first">
+        <p>First stop. The ride has begun!</p>
+    </li>
+    <li data-id="second">
+        <h4>Second Stop</h4>
+        <p>Any valid HTML will work inside the Joyride.</p>
+    </li>
+    <li data-button="End">
+        <h4>End Stop</h4>
+        <p>The tour is over. You can either go back to the previous stop or close it.</p>
+    </li>
+</ol>
+<script>
+    $(document).ready(function () {
+        $(document).foundation();
+        $(document).foundation('joyride', 'start');
+    })
+</script>
+
+</body>
+</html>
